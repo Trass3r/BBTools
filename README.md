@@ -25,7 +25,7 @@ MAPViewer is a tool to visualize the mission and savegame files.
 
 ## Cheat Mode
 
-The game contains a hidden cheat mode that can be enabled by patching the executable.
+The game contains a hidden cheat mode and map editor that can be enabled by patching the executable.
 
 **Cheat Mode Flag:** `dword_4842A0` (global variable)
 - Address: `0x004842A0`
