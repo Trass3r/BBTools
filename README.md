@@ -22,6 +22,110 @@ MAPViewer is a tool to visualize the mission and savegame files.
 | int                            | size_of_objects_arr|
 | MapObject[size_of_objects_arr] | objects            |
 
+# Structure MapObject
+```c
+#pragma pack(push, 1)
+struct MapObject
+{
+  MapObject *unk110;
+  MapObject *unk111;
+  MapObject *unk112;
+  MapObject *unk113;
+  MapObject *unk114;
+  MapObject *unk99;
+  MapObject *unk115;
+  MapObject *unk116;
+  MapObject *unk117;
+  MapObject *unk118;
+  MapObject *unk119;
+  MapObject *unk120;
+  MapObject *unk121;
+  MapObject *unk122;
+  int unk1;
+  char name[32];
+  int unk131;
+  unsigned __int8 data1[2];
+  int unk5;
+  int unk7;
+  int unk29;
+  int unk30;
+  int unk31;
+  int unk62;
+  int unk63;
+  int unk64;
+  unsigned __int8 data5_1[12];
+  int unk_index1;
+  unsigned __int8 data2[10];
+  int unk32;
+  unsigned __int16 health;
+  unsigned __int8 data2_1[50];
+  unsigned __int8 class_id;
+  unsigned __int8 data3[3];
+  unsigned __int8 x;
+  unsigned __int8 y;
+  unsigned __int8 data6[9];
+  unsigned __int8 unk77;
+  unsigned __int8 unk78;
+  unsigned __int8 unk79;
+  unsigned __int8 unk80;
+  unsigned __int8 unk81;
+  unsigned __int8 unk82;
+  unsigned __int8 unk83;
+  unsigned __int8 unk11;
+  unsigned __int8 unk12;
+  int unk3;
+  unsigned __int8 unk3_size;
+  unsigned __int8 unk17;
+  unsigned __int8 unk18;
+  unsigned __int8 unk19;
+  unsigned __int8 unk10;
+  unsigned __int8 unk21;
+  unsigned __int8 unk22;
+  unsigned __int8 unk23;
+  unsigned __int8 unk24;
+  unsigned __int8 unk25;
+  unsigned __int8 unk26;
+  unsigned __int8 data8[9];
+  unsigned __int8 unk15;
+  unsigned __int8 data10[15];
+  unsigned __int8 unk14;
+  unsigned __int8 data9[8];
+  unsigned __int8 unk103;
+  unsigned __int8 data9_1[12];
+  unsigned __int8 unk4;
+  unsigned __int8 unk8;
+  unsigned __int8 unk9;
+  unsigned __int8 unk13;
+  unsigned __int8 data7[12];
+};
+#pragma pack(pop)
+```
+
+# Map objects
+| Class ID | Description            |
+|----------|------------------------|
+| 0        | Indestructible tree    |
+| 1        | Church                 |
+| 2        | Peasant hut            |
+| 5        | Tree                   |
+| 6        | Spruce                 |
+| 7        | Fire                   |
+| 25       | Crate                  |
+| 33       | Egg (zombie spawner)   |
+| 36       | Spike                  |
+| 37       | Skulls (mine)          |
+| 38       | Gas mold               |
+| 41       | Airstrike              |
+| 58       | Corpse                 |
+| 78       | Wheat                  |
+| 83       | Mushroom               |
+| 98       | Flagpost               |
+| 103      | Villager               |
+| 111      | Chicken                |
+| 143      | Campfire               |
+| 159      | Goblet                 |
+| 171      | Cow                    |
+
 
 ## Cheat Mode
 
